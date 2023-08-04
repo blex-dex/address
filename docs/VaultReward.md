@@ -101,22 +101,6 @@ function coreVault() public view
 ----------------------------------------------------------------
 ### 14. buy: used to buy shares in a vault using an ERC20 asset as payment.
 ```
-    /**
-     * @dev This function is used to buy shares in a vault using an ERC20 asset as payment.
-     * @param vault The address of the vault.
-     * @param to The address where the purchased shares will be sent.
-     * @param amount The amount of ERC20 tokens to use for purchasing the shares.
-     * @param minSharesOut The minimum number of shares that the buyer expects to receive for their payment.
-     * @return sharesOut The actual number of shares purchased by the buyer.
-     */
-    function buy(
-        IERC4626 vault,
-        address to,
-        uint256 amount,
-        uint256 minSharesOut
-    ) public nonReentrant returns (uint256 sharesOut)
-```
-```
 const { ethers } = require("ethers");
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 const url = ""
@@ -140,24 +124,23 @@ async function testVaultReward() {
     await tx.wait()
 }
 ```
-### 15. sell: sells a specified amount of shares in a given vault on behalf of the caller using the `vaultReward` contract.
 ```
     /**
-     * @dev This function sells a specified amount of shares in a given vault on behalf of the caller using the `vaultReward` contract.
-     * The `to` address receives the resulting assets of the sale.
-     * @param vault The address of the vault to sell assets from.
-     * @param to The address that receives the resulting shares of the sale.
-     * @param shares The amount of shares to sell.
-     * @param minAssetsOut The minimum amount of assets the caller expects to receive from the sale.
-     * @return assetOut The resulting number of shares received by the `to` address.
+     * @dev This function is used to buy shares in a vault using an ERC20 asset as payment.
+     * @param vault The address of the vault.
+     * @param to The address where the purchased shares will be sent.
+     * @param amount The amount of ERC20 tokens to use for purchasing the shares.
+     * @param minSharesOut The minimum number of shares that the buyer expects to receive for their payment.
+     * @return sharesOut The actual number of shares purchased by the buyer.
      */
-    function sell(
+    function buy(
         IERC4626 vault,
         address to,
-        uint256 shares,
-        uint256 minAssetsOut
-    ) public nonReentrant returns (uint256 assetOut)
+        uint256 amount,
+        uint256 minSharesOut
+    ) public nonReentrant returns (uint256 sharesOut)
 ```
+### 15. sell: sells a specified amount of shares in a given vault on behalf of the caller using the `vaultReward` contract.
 ```
 const { ethers } = require("ethers");
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
@@ -188,18 +171,24 @@ async function testVaultReward() {
 
 }
 ```
-### 16. claimLPReward: This function allows an LP (liquidity provider) to claim their rewards in the current market
 ```
     /**
-     * @dev This function allows an LP (liquidity provider) to claim their rewards in the current market.
-     * The function first checks that the LP has a non-zero balance in the CoreVault contract.
-     * If the LP has a non-zero balance, the function calls the `pendingRewards` function to calculate the amount of
-     * rewards the LP is entitled to. The LP's earned rewards are then stored in the `lpEarnedRewards` mapping.
-     * Finally, the `transferFromVault` function of the `vaultRouter` contract is called to transfer the rewards
-     * from the market's vault to the LP's account.
+     * @dev This function sells a specified amount of shares in a given vault on behalf of the caller using the `vaultReward` contract.
+     * The `to` address receives the resulting assets of the sale.
+     * @param vault The address of the vault to sell assets from.
+     * @param to The address that receives the resulting shares of the sale.
+     * @param shares The amount of shares to sell.
+     * @param minAssetsOut The minimum amount of assets the caller expects to receive from the sale.
+     * @return assetOut The resulting number of shares received by the `to` address.
      */
-    function claimLPReward() public nonReentrant
+    function sell(
+        IERC4626 vault,
+        address to,
+        uint256 shares,
+        uint256 minAssetsOut
+    ) public nonReentrant returns (uint256 assetOut)
 ```
+### 16. claimLPReward: This function allows an LP (liquidity provider) to claim their rewards in the current market
 ```
 const { ethers } = require("ethers");
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
@@ -226,4 +215,15 @@ async function testclaimLPReward() {
     tx = await vaultReward.claimLPReward()
     await tx.wait()
 }
+```
+```
+    /**
+     * @dev This function allows an LP (liquidity provider) to claim their rewards in the current market.
+     * The function first checks that the LP has a non-zero balance in the CoreVault contract.
+     * If the LP has a non-zero balance, the function calls the `pendingRewards` function to calculate the amount of
+     * rewards the LP is entitled to. The LP's earned rewards are then stored in the `lpEarnedRewards` mapping.
+     * Finally, the `transferFromVault` function of the `vaultRouter` contract is called to transfer the rewards
+     * from the market's vault to the LP's account.
+     */
+    function claimLPReward() public nonReentrant
 ```

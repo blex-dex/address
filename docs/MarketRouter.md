@@ -2,6 +2,55 @@
 
 ### 1. increasePosition: Increases the size of a position on a market with the specified inputs
 ```
+const { ethers } = require("ethers");
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+const url = ""
+const provider = new ethers.providers.JsonRpcProvider(url);
+const signer = await provider.getSigner()
+
+function addDecimals(num, decimals) {
+  num = String(num);
+  const zeros = ethers.utils.parseUnits("1", decimals); //_price
+  if (num.indexOf(".") < 0) {
+    return BN.from(num).mul(zeros);
+  }
+  const [left, right, ...rest] = num.split(".");
+  const num1 = BN.from(left).mul(zeros);
+  const right_de = decimals - right?.length;
+  const zeros2 = ethers.utils.parseUnits("1", right_de);
+  const num2 = BN.from(right).mul(zeros2);
+  return num1.add(num2);
+}
+
+async function testincreasePosition() {
+    const marketRouterABI = []
+    const marketRouterAddress = "0x6FEca459A8D57F6782fA46A9B56547101E984cc8"
+    const marketAddress = ""
+
+    const marketRouter = new ethers.Contract(marketRouterAddress, marketRouterABI, signer);
+
+    let inputs = {
+        _market : marketAddress,
+        _isLong : true,
+        _oraclePrice : 0,
+        isOpen : true,
+        _account : signer.getAddress(),
+        _sizeDelta : 1000000,
+        _price : addDecimals(40000+'',30),
+        _slippage : 30,
+        _isExec : false,
+        liqState : 0,
+        _fromOrder : "order id",
+        _refCode : ethers.utils.formatBytes32String("As123456"),
+        collateralDelta : 1000000,
+        execNum : 0,
+        inputs : [0,0,0] //0: tp, isKeepLev; 1: sl
+    }
+    let tx = await marketRouter.increasePosition(inputs)
+    await tx.wait()
+}
+```
+```
     /**
      * @notice Increases the size of a position on a market with the specified inputs
      * @param _inputs Inputs for updating the position
@@ -43,6 +92,7 @@
         uint256[] inputs;
     }
 ```
+### 2. decreasePosition: Function to decrease the position in the market
 ```
 const { ethers } = require("ethers");
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
@@ -50,7 +100,21 @@ const url = ""
 const provider = new ethers.providers.JsonRpcProvider(url);
 const signer = await provider.getSigner()
 
-async function testincreasePosition() {
+function addDecimals(num, decimals) {
+  num = String(num);
+  const zeros = ethers.utils.parseUnits("1", decimals); //_price
+  if (num.indexOf(".") < 0) {
+    return BN.from(num).mul(zeros);
+  }
+  const [left, right, ...rest] = num.split(".");
+  const num1 = BN.from(left).mul(zeros);
+  const right_de = decimals - right?.length;
+  const zeros2 = ethers.utils.parseUnits("1", right_de);
+  const num2 = BN.from(right).mul(zeros2);
+  return num1.add(num2);
+}
+
+async function testDecreasePosition() {
     const marketRouterABI = []
     const marketRouterAddress = "0x6FEca459A8D57F6782fA46A9B56547101E984cc8"
     const marketAddress = ""
@@ -60,25 +124,24 @@ async function testincreasePosition() {
     let inputs = {
         _market : marketAddress,
         _isLong : true,
-        _oraclePrice : 50000,
+        _oraclePrice : 0,
         isOpen : true,
         _account : signer.getAddress(),
         _sizeDelta : 1000000,
-        _price : 40000,
+        _price : addDecimals(40000+'',30),
         _slippage : 30,
         _isExec : false,
         liqState : 0,
         _fromOrder : "order id",
-        _refCode : "As123456",
+        _refCode : ethers.utils.formatBytes32String("As123456"),
         collateralDelta : 1000000,
         execNum : 0,
         inputs : [0,0,0] //0: tp, isKeepLev; 1: sl
     }
-    let tx = await marketRouter.increasePosition(inputs)
+    let tx = await marketRouter.decreasePosition(inputs)
     await tx.wait()
 }
 ```
-### 2. decreasePosition: Function to decrease the position in the market
 ```
     /**
      * @dev Function to decrease the position in the market
@@ -120,41 +183,6 @@ async function testincreasePosition() {
         uint8 execNum;
         uint256[] inputs;
     }
-```
-```
-const { ethers } = require("ethers");
-const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
-const url = ""
-const provider = new ethers.providers.JsonRpcProvider(url);
-const signer = await provider.getSigner()
-
-async function testDecreasePosition() {
-    const marketRouterABI = []
-    const marketRouterAddress = "0x6FEca459A8D57F6782fA46A9B56547101E984cc8"
-    const marketAddress = ""
-
-    const marketRouter = new ethers.Contract(marketRouterAddress, marketRouterABI, signer);
-
-    let inputs = {
-        _market : marketAddress,
-        _isLong : true,
-        _oraclePrice : 50000,
-        isOpen : true,
-        _account : signer.getAddress(),
-        _sizeDelta : 1000000,
-        _price : 40000,
-        _slippage : 30,
-        _isExec : false,
-        liqState : 0,
-        _fromOrder : "order id",
-        _refCode : "As123456",
-        collateralDelta : 1000000,
-        execNum : 0,
-        inputs : [0,0,0] //0: tp, isKeepLev; 1: sl
-    }
-    let tx = await marketRouter.decreasePosition(inputs)
-    await tx.wait()
-}
 ```
 ### 3. updateOrder: Create/Updates an order in a market.
 ```
