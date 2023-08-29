@@ -1,0 +1,48 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IPrice",
+  "sourceName": "contracts/oracle/interfaces/IPrice.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "fastPriceFeed",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_maximise",
+          "type": "bool"
+        }
+      ],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

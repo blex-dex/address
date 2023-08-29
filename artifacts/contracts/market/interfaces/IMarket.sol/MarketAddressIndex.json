@@ -1,0 +1,167 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MarketAddressIndex",
+  "sourceName": "contracts/market/interfaces/IMarket.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "ADDR_CT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_FR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_IT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_MI",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_MR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_MV",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_OBL",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_OBS",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_PB",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_PF",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_PM",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ADDR_VR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x61016b61003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106100be5760003560e01c80637710f47d1161007b5780637710f47d14610105578063ae1fa1291461010d578063bd2708a514610115578063c34027271461011d578063ddc1c49e14610125578063e5919c571461012d57600080fd5b80631be9c41f146100c35780632227623a146100dd57806329d6ec38146100e55780632ae2560b146100ed578063520cfece146100f55780635dd463ad146100fd575b600080fd5b6100cb600b81565b60405190815260200160405180910390f35b6100cb600381565b6100cb600a81565b6100cb600781565b6100cb600881565b6100cb600181565b6100cb600681565b6100cb600081565b6100cb600981565b6100cb600581565b6100cb600281565b6100cb60048156fea26469706673582212205d618046aa9d2092a39c07fa04c43b6e448f0df4eb8bc2a158423494e97f764064736f6c63430008110033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106100be5760003560e01c80637710f47d1161007b5780637710f47d14610105578063ae1fa1291461010d578063bd2708a514610115578063c34027271461011d578063ddc1c49e14610125578063e5919c571461012d57600080fd5b80631be9c41f146100c35780632227623a146100dd57806329d6ec38146100e55780632ae2560b146100ed578063520cfece146100f55780635dd463ad146100fd575b600080fd5b6100cb600b81565b60405190815260200160405180910390f35b6100cb600381565b6100cb600a81565b6100cb600781565b6100cb600881565b6100cb600181565b6100cb600681565b6100cb600081565b6100cb600981565b6100cb600581565b6100cb600281565b6100cb60048156fea26469706673582212205d618046aa9d2092a39c07fa04c43b6e448f0df4eb8bc2a158423494e97f764064736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
