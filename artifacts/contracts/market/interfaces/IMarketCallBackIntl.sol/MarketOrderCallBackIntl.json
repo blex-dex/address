@@ -1,0 +1,342 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MarketOrderCallBackIntl",
+  "sourceName": "contracts/market/interfaces/IMarketCallBackIntl.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "uint8",
+                  "name": "version",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "updatedAtBlock",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "triggerAbove",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "address",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "extra3",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "collateral",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "size",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "price",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "extra1",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "orderID",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "extra2",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "extra0",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "refCode",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct Order.Props",
+              "name": "order",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "_market",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "_isLong",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_oraclePrice",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isOpen",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "address",
+                  "name": "_account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_sizeDelta",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_price",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_slippage",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "_isExec",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "liqState",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "_fromOrder",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "_refCode",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "collateralDelta",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "execNum",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "inputs",
+                  "type": "uint256[]"
+                }
+              ],
+              "internalType": "struct MarketDataTypes.UpdatePositionInputs",
+              "name": "inputs",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint8",
+              "name": "reason",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "reasonStr",
+              "type": "string"
+            },
+            {
+              "internalType": "int256",
+              "name": "dPNL",
+              "type": "int256"
+            }
+          ],
+          "internalType": "struct MarketOrderCallBackIntl.DeleteOrderEvent",
+          "name": "e",
+          "type": "tuple"
+        }
+      ],
+      "name": "deleteOrderCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getHooksCalls",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "bool",
+              "name": "updatePosition",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "updateOrder",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "deleteOrder",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct MarketCallBackIntl.Calls",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "_market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "_isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_oraclePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isOpen",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isCreate",
+              "type": "bool"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint8",
+                  "name": "version",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "updatedAtBlock",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "triggerAbove",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "address",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "extra3",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "collateral",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "size",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "price",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "extra1",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "orderID",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "extra2",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "extra0",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "refCode",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct Order.Props",
+              "name": "_order",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "inputs",
+              "type": "uint256[]"
+            }
+          ],
+          "internalType": "struct MarketDataTypes.UpdateOrderInputs",
+          "name": "_event",
+          "type": "tuple"
+        }
+      ],
+      "name": "updateOrderCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

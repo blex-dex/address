@@ -1,0 +1,301 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MarketStorage",
+  "sourceName": "contracts/market/MarketStorage.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "collateralToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "collateralTokenDigits",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeRouter",
+      "outputs": [
+        {
+          "internalType": "contract IFeeRouter",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "globalValid",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "indexToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "marketRouter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "marketValid",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "orderBookLong",
+      "outputs": [
+        {
+          "internalType": "contract IOrderBook",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "orderBookShort",
+      "outputs": [
+        {
+          "internalType": "contract IOrderBook",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "orderMgr",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "isLong",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isOpen",
+          "type": "bool"
+        }
+      ],
+      "name": "orderStore",
+      "outputs": [
+        {
+          "internalType": "contract IOrderStore",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pluginGasLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "plugins",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionAddMgr",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionBook",
+      "outputs": [
+        {
+          "internalType": "contract IPositionBook",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionStoreLong",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionStoreShort",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionSubMgr",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceFeed",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vaultRouter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506104f7806100206000396000f3fe608060405234801561001057600080fd5b50600436106101375760003560e01c8063ac0b05a6116100b8578063d12dbde41161007c578063d12dbde4146102ae578063d37c441c146102c1578063d49ff78d146102d4578063e7d015f2146102e7578063f0a317eb146102fa578063f29ebf611461030d57600080fd5b8063ac0b05a614610243578063b2016bd414610256578063b21dc9cb14610269578063b894300d14610288578063c54dc3d61461029b57600080fd5b8063741bef1a116100ff578063741bef1a146101bf5780637b2fd1e5146101d25780638a6ca35d146101e5578063a0cbf50c146101f8578063a26404541461020b57600080fd5b806303deb0291461013c57806305ba9ae91461015957806306fdde031461018457806307e875451461019957806345ccf5c5146101ac575b600080fd5b610146620a2c2a81565b6040519081526020015b60405180910390f35b60065461016c906001600160a01b031681565b6040516001600160a01b039091168152602001610150565b61018c610320565b60405161015091906103d8565b600a5461016c906001600160a01b031681565b600b5461016c906001600160a01b031681565b60095461016c906001600160a01b031681565b60055461016c906001600160a01b031681565b600e5461016c906001600160a01b031681565b600f5461016c906001600160a01b031681565b61016c61021936600461043b565b9015156000908152600760209081526040808320931515835292905220546001600160a01b031690565b60035461016c906001600160a01b031681565b60045461016c906001600160a01b031681565b6013546102769060ff1681565b60405160ff9091168152602001610150565b60005461016c906001600160a01b031681565b60015461016c906001600160a01b031681565b60105461016c906001600160a01b031681565b600c5461016c906001600160a01b031681565b600d5461016c906001600160a01b031681565b60025461016c906001600160a01b031681565b61016c61030836600461046e565b6103ae565b60085461016c906001600160a01b031681565b6011805461032d90610487565b80601f016020809104026020016040519081016040528092919081815260200182805461035990610487565b80156103a65780601f1061037b576101008083540402835291602001916103a6565b820191906000526020600020905b81548152906001019060200180831161038957829003601f168201915b505050505081565b601281815481106103be57600080fd5b6000918252602090912001546001600160a01b0316905081565b600060208083528351808285015260005b81811015610405578581018301518582016040015282016103e9565b506000604082860101526040601f19601f8301168501019250505092915050565b8035801515811461043657600080fd5b919050565b6000806040838503121561044e57600080fd5b61045783610426565b915061046560208401610426565b90509250929050565b60006020828403121561048057600080fd5b5035919050565b600181811c9082168061049b57607f821691505b6020821081036104bb57634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220665862b46d495b8daba554cb8f0fe87c0b63a9a65649a2174594e108c15fe3e364736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101375760003560e01c8063ac0b05a6116100b8578063d12dbde41161007c578063d12dbde4146102ae578063d37c441c146102c1578063d49ff78d146102d4578063e7d015f2146102e7578063f0a317eb146102fa578063f29ebf611461030d57600080fd5b8063ac0b05a614610243578063b2016bd414610256578063b21dc9cb14610269578063b894300d14610288578063c54dc3d61461029b57600080fd5b8063741bef1a116100ff578063741bef1a146101bf5780637b2fd1e5146101d25780638a6ca35d146101e5578063a0cbf50c146101f8578063a26404541461020b57600080fd5b806303deb0291461013c57806305ba9ae91461015957806306fdde031461018457806307e875451461019957806345ccf5c5146101ac575b600080fd5b610146620a2c2a81565b6040519081526020015b60405180910390f35b60065461016c906001600160a01b031681565b6040516001600160a01b039091168152602001610150565b61018c610320565b60405161015091906103d8565b600a5461016c906001600160a01b031681565b600b5461016c906001600160a01b031681565b60095461016c906001600160a01b031681565b60055461016c906001600160a01b031681565b600e5461016c906001600160a01b031681565b600f5461016c906001600160a01b031681565b61016c61021936600461043b565b9015156000908152600760209081526040808320931515835292905220546001600160a01b031690565b60035461016c906001600160a01b031681565b60045461016c906001600160a01b031681565b6013546102769060ff1681565b60405160ff9091168152602001610150565b60005461016c906001600160a01b031681565b60015461016c906001600160a01b031681565b60105461016c906001600160a01b031681565b600c5461016c906001600160a01b031681565b600d5461016c906001600160a01b031681565b60025461016c906001600160a01b031681565b61016c61030836600461046e565b6103ae565b60085461016c906001600160a01b031681565b6011805461032d90610487565b80601f016020809104026020016040519081016040528092919081815260200182805461035990610487565b80156103a65780601f1061037b576101008083540402835291602001916103a6565b820191906000526020600020905b81548152906001019060200180831161038957829003601f168201915b505050505081565b601281815481106103be57600080fd5b6000918252602090912001546001600160a01b0316905081565b600060208083528351808285015260005b81811015610405578581018301518582016040015282016103e9565b506000604082860101526040601f19601f8301168501019250505092915050565b8035801515811461043657600080fd5b919050565b6000806040838503121561044e57600080fd5b61045783610426565b915061046560208401610426565b90509250929050565b60006020828403121561048057600080fd5b5035919050565b600181811c9082168061049b57607f821691505b6020821081036104bb57634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220665862b46d495b8daba554cb8f0fe87c0b63a9a65649a2174594e108c15fe3e364736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

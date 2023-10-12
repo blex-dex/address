@@ -1,0 +1,213 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IMarketRouter",
+  "sourceName": "contracts/market/interfaces/IMarketRouter.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "addMarket",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getAccountSize",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "sizesL",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sizesS",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getGlobalPNL",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "pnl",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getGlobalSize",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "sizesLong",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "sizesShort",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "removeMarket",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newA",
+          "type": "address"
+        }
+      ],
+      "name": "updatePositionBook",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "_market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "_isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_oraclePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isOpen",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "_account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_sizeDelta",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_slippage",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "_isExec",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint8",
+              "name": "liqState",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint64",
+              "name": "_fromOrder",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_refCode",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateralDelta",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "execNum",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "inputs",
+              "type": "uint256[]"
+            }
+          ],
+          "internalType": "struct MarketDataTypes.UpdatePositionInputs",
+          "name": "_inputs",
+          "type": "tuple"
+        }
+      ],
+      "name": "validateIncreasePosition",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vaultRouter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

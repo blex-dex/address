@@ -1,0 +1,144 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockVaultRouter",
+  "sourceName": "contracts/mocker/MockVaultRouter.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "USDBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "borrowFromVault",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "fundLimit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "fundsUsed",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAUM",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getUSDBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "repayToVault",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_limit",
+          "type": "uint256"
+        }
+      ],
+      "name": "setFundLimit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_balance",
+          "type": "uint256"
+        }
+      ],
+      "name": "setUSDBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506102c9806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c8063c120105411610066578063c1201054146100f3578063d666fe08146100fb578063e44eb39614610104578063fa867f0114610117578063fce0e5ae1461012a57600080fd5b806307021bdd146100985780632b8a0012146100b35780632c7550c3146100d35780636dc7b0a1146100e8575b600080fd5b6100a160015481565b60405190815260200160405180910390f35b6100a16100c13660046101ec565b60026020526000908152604090205481565b6100e66100e136600461020e565b61013d565b005b641caab3e2c06100a1565b6001546100a1565b6100a160005481565b6100e6610112366004610238565b600055565b6100e6610125366004610238565b600155565b6100e661013836600461020e565b610181565b6001600160a01b038216600090815260026020526040902054610161908290610267565b6001600160a01b0390921660009081526002602052604090209190915550565b6001600160a01b0382166000908152600260205260409020546101a5908290610280565b6001600160a01b03831660009081526002602052604081208290555410156101cc57600080fd5b5050565b80356001600160a01b03811681146101e757600080fd5b919050565b6000602082840312156101fe57600080fd5b610207826101d0565b9392505050565b6000806040838503121561022157600080fd5b61022a836101d0565b946020939093013593505050565b60006020828403121561024a57600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b8181038181111561027a5761027a610251565b92915050565b8082018082111561027a5761027a61025156fea264697066735822122035040d22938861f8be9f0017eb0b1f9333d402aa3f3df94246b42fb5f2c6f8b764736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c8063c120105411610066578063c1201054146100f3578063d666fe08146100fb578063e44eb39614610104578063fa867f0114610117578063fce0e5ae1461012a57600080fd5b806307021bdd146100985780632b8a0012146100b35780632c7550c3146100d35780636dc7b0a1146100e8575b600080fd5b6100a160015481565b60405190815260200160405180910390f35b6100a16100c13660046101ec565b60026020526000908152604090205481565b6100e66100e136600461020e565b61013d565b005b641caab3e2c06100a1565b6001546100a1565b6100a160005481565b6100e6610112366004610238565b600055565b6100e6610125366004610238565b600155565b6100e661013836600461020e565b610181565b6001600160a01b038216600090815260026020526040902054610161908290610267565b6001600160a01b0390921660009081526002602052604090209190915550565b6001600160a01b0382166000908152600260205260409020546101a5908290610280565b6001600160a01b03831660009081526002602052604081208290555410156101cc57600080fd5b5050565b80356001600160a01b03811681146101e757600080fd5b919050565b6000602082840312156101fe57600080fd5b610207826101d0565b9392505050565b6000806040838503121561022157600080fd5b61022a836101d0565b946020939093013593505050565b60006020828403121561024a57600080fd5b5035919050565b634e487b7160e01b600052601160045260246000fd5b8181038181111561027a5761027a610251565b92915050565b8082018082111561027a5761027a61025156fea264697066735822122035040d22938861f8be9f0017eb0b1f9333d402aa3f3df94246b42fb5f2c6f8b764736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
