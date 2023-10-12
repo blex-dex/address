@@ -15,7 +15,7 @@
     "VaultRouterImpl": "0xe6F2C7ca2bf8f211BBe5E6FF6D33bC313D623b4C",
     "VaultRouter_block": 118407148,
     "VaultReward": "0xBC1502aF0B7bDD34A9631a9A1F6f7773467d2862",
-    "VaultRewardImpl": "0x6F17aA424DcDF084a740710165F81F5Ec04b6D49",
+    "VaultRewardImpl": "0x0Ef1864e30554eca2fFe79AeCfbE2b61E743f439",
     "VaultReward_block": 118407213,
     "RewardDistributor": "0x54c14Fa76eeD09897F09d06580b3add70793CF19",
     "RewardDistributorImpl": "0x6166ec82E4414B237CbFd95E88212040b51c4CB0",
@@ -41,8 +41,8 @@
     "FeeRouter_block": 118407767,
     "ChainPriceFeed": "0x90ff4f5d03f686bfE346041e6E1aB8402551bc3b",
     "ChainPriceFeed_block": 118407983,
-    "FastPriceFeed": "0x6f52F279cF2E0C7ce4d3862Abb51D47Ad35066bB",
-    "FastPriceFeed_block": 118408015,
+    "FastPriceFeed": "0x663dd69c8109294dEf76FdE7804AC41505b43Bc5",
+    "FastPriceFeed_block": 139850129,
     "Price": "0x9B87562E6987bB1fA69f6E72C4Ad7317433E9215",
     "Price_block": 118408061,
     "Referral": "0x1470Fc95f579C52f7c3D32315B627b2d4F79868e",
@@ -51,5 +51,8 @@
     "AutoManager": "0xEA686D3Af4029daaaD29080479EAc0fF76a9a207",
     "AutoManager_block": 118408539,
     "BatchTransfer": "0x8c747610Fc2495FEc947112FA3a770fBC711CCc5",
-    "BatchTransfer_block": 118409150
+    "BatchTransfer_block": 118409150,
+    "AutoOrderV2": "0xA4877Cc45ef618615Fd3C82065FB81B19958d2EA",
+    "AutoOrderV2_block": 139846902,
+    "FastPriceFeedImpl": "0xa26c1f1B01a500A7774e37f009911121821F833F"
 }
