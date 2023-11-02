@@ -23,7 +23,7 @@
     "MarketFactory": "0x9b2E69d427D7EC8033Fa065C8D09421479Bb35eC",
     "MarketFactory_block": 118407299,
     "MarketRouter": "0xf14cBC388176B75401c6666C08bE8bB0046cdb83",
-    "MarketRouterImpl": "0x0947D4Dbe3CAB51A193b934f2bc9Fa828d6421Df",
+    "MarketRouterImpl": "0x90f636273dB6C2524f3071C3C0dD4b74Ef836650",
     "MarketRouter_block": 118407404,
     "MarketReader": "0x4EdEafD45FaC4f6cA168961a37DEf72D8964F2b0",
     "MarketReader_block": 118407422,
@@ -46,13 +46,13 @@
     "Price": "0x9B87562E6987bB1fA69f6E72C4Ad7317433E9215",
     "Price_block": 118408061,
     "Referral": "0x1470Fc95f579C52f7c3D32315B627b2d4F79868e",
-    "ReferralImpl": "0xE9bca82F0537F9e4ecc47c69743B2EB6BA1fFc3c",
+    "ReferralImpl": "0x030D47A4160671769555321241652a1C511785DE",
     "Referral_block": 118408501,
     "AutoManager": "0xEA686D3Af4029daaaD29080479EAc0fF76a9a207",
     "AutoManager_block": 118408539,
     "BatchTransfer": "0x8c747610Fc2495FEc947112FA3a770fBC711CCc5",
     "BatchTransfer_block": 118409150,
-    "AutoOrderV2": "0x59A3F5899C2A25922C408dCA82382605dD803392",
-    "AutoOrderV2_block": 139903331,
-    "FastPriceFeedImpl": "0xa26c1f1B01a500A7774e37f009911121821F833F"
+    "AutoOrderV2": "0xee08be94b6541237698672B5B589632E35966734",
+    "AutoOrderV2_block": 146279558,
+    "FastPriceFeedImpl": "0xd56454B6bb1781BF157Ef73dA6438E72F281B0fd"
 }
