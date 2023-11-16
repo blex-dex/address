@@ -32,6 +32,34 @@
           "internalType": "int256[]",
           "name": "fees",
           "type": "int256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fundfeeLoss",
+          "type": "uint256"
+        }
+      ],
+      "name": "collectFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "int256[]",
+          "name": "originFees",
+          "type": "int256[]"
         }
       ],
       "name": "collectFees",
@@ -446,16 +474,26 @@
       "inputs": [
         {
           "internalType": "address",
-          "name": "vault",
+          "name": "account",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "fundingFee",
+          "name": "token",
           "type": "address"
+        },
+        {
+          "internalType": "int256[]",
+          "name": "fees",
+          "type": "int256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feesTotal",
+          "type": "uint256"
         }
       ],
-      "name": "initialize",
+      "name": "payoutFees",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
