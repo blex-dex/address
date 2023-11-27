@@ -9,7 +9,7 @@
     "GlobalValid": "0x9CfeF76F7C18B0F2778C8A9A8f21431cdE6FdB24",
     "GlobalValid_block": 118406991,
     "CoreVault": "0x4d377340a2875b875e1C104B9905F74FD716F59e",
-    "CoreVaultImpl": "0x5B8260c86A9e3a7Be5BD5060E99642159Cf8E667",
+    "CoreVaultImpl": "0xB66E9a76B7751c52927ebe379D84101580759526",
     "CoreVault_block": 118407078,
     "VaultRouter": "0xd13de03AEf501d228872CFCcDC2a876DE74BC303",
     "VaultRouterImpl": "0xe6F2C7ca2bf8f211BBe5E6FF6D33bC313D623b4C",
@@ -27,9 +27,9 @@
     "MarketRouter_block": 118407404,
     "MarketReader": "0x4EdEafD45FaC4f6cA168961a37DEf72D8964F2b0",
     "MarketReader_block": 118407422,
-    "PositionAddMgr": "0x77Bb2b97d28a020C06Fb039Ee89aF35Aa5c3e15C",
+    "PositionAddMgr": "0xe56A018E8b7e35E37ed0B22Fc03dF71f24Da5d19",
     "PositionAddMgr_block": 118407482,
-    "PositionSubMgr": "0x315EB5410c830bD4004260Bf28Ca28C47c59d43F",
+    "PositionSubMgr": "0x3f9973FC99b21e24e9B5eD44bB001458052e4786",
     "PositionSubMgr_block": 118407558,
     "OrderMgr": "0xF4484E48BeF4DFF560F07E39F103d22f9b3641f0",
     "OrderMgr_block": 118407629,
@@ -55,6 +55,6 @@
     "AutoOrderV2": "0xee08be94b6541237698672B5B589632E35966734",
     "AutoOrderV2_block": 146279558,
     "FastPriceFeedImpl": "0xd56454B6bb1781BF157Ef73dA6438E72F281B0fd",
-    "FundFeeImpl": "0x4a18C1d5C695721cfdaCA62EaDD6baaF1A596e62",
+    "FundFeeImpl": "0xCeAbbB12E999842195caccf92c7D03D93A6F4743",
     "FeeRouterImpl": "0x46E01Db554eE3c4b54AC023237F2FC69E77B2cA0"
 }
