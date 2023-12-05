@@ -56,23 +56,11 @@
     "AutoOrderV2_block": 146279558,
     "FastPriceFeedImpl": "0xd56454B6bb1781BF157Ef73dA6438E72F281B0fd",
     "FundFeeImpl": "0xCeAbbB12E999842195caccf92c7D03D93A6F4743",
-    "FeeRouterImpl": "0x46E01Db554eE3c4b54AC023237F2FC69E77B2cA0",
-    "ETHPositionStoreV2Long": "0xa1c8a494300763D2dD07DC09b1d6FBdC3c737fcf",
-    "ETHPositionStoreV2LongImpl": "0x8f6F93DF42AabFe8e6Ba1c5b89259bBFc63EE107",
-    "ETHPositionStoreV2Long_block": 156768737,
-    "ETHPositionStoreV2Short": "0xB9503973720e632E1159ccb75077c4A7F14A69b0",
-    "ETHPositionStoreV2ShortImpl": "0xF0a1B10c9e6527Bac1ac3FCD4c88d064fEf17985",
-    "ETHPositionStoreV2Short_block": 156768772,
-    "ETHPositionBookV2": "0x19422E2BF95B582f968a4ad4119F0dd514a2809F",
-    "ETHPositionBookV2Impl": "0x319eA2f5580Ef55148ab07670123F9E873F7eCeE",
-    "ETHPositionBookV2_block": 156768815,
-    "BTCPositionStoreV2Long": "0xFa812093981d9f164394356Ddcc6F1aa3F77d040",
-    "BTCPositionStoreV2LongImpl": "0x256DC1d5dA85753Efe61Fba16736217B1b50e67C",
-    "BTCPositionStoreV2Long_block": 156768576,
-    "BTCPositionStoreV2Short": "0x397C90448d0D88AE44592E2bbE547F7dcF3Ae015",
-    "BTCPositionStoreV2ShortImpl": "0x3aDDf4B739540133F69a1F407D2D430FF67930e8",
-    "BTCPositionStoreV2Short_block": 156768610,
-    "BTCPositionBookV2": "0x9f457C155E7A5f63e99F6baEE13b9AB897C282B8",
-    "BTCPositionBookV2Impl": "0x7A41DE46C4725978d9d1E4d624BBd362FFD66ae5",
-    "BTCPositionBookV2_block": 156768653
+    "FeeRouterImpl": "0x46E01Db554eE3c4b54AC023237F2FC69E77B2cA0"
+
+
+
+    
+    
+    
 }
