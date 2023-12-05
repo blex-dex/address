@@ -31,7 +31,7 @@
     "PositionAddMgr_block": 118407482,
     "PositionSubMgr": "0x3f9973FC99b21e24e9B5eD44bB001458052e4786",
     "PositionSubMgr_block": 118407558,
-    "OrderMgr": "0xF4484E48BeF4DFF560F07E39F103d22f9b3641f0",
+    "OrderMgr": "0x0bf79F488ECDacf8e4DB56d7aFAB6B315474A3c4",
     "OrderMgr_block": 118407629,
     "FeeVault": "0xbEd96a81f8694947159eD0556B077b35Fa8379a7",
     "FeeVault_block": 118407692,
@@ -57,10 +57,4 @@
     "FastPriceFeedImpl": "0xd56454B6bb1781BF157Ef73dA6438E72F281B0fd",
     "FundFeeImpl": "0xCeAbbB12E999842195caccf92c7D03D93A6F4743",
     "FeeRouterImpl": "0x46E01Db554eE3c4b54AC023237F2FC69E77B2cA0"
-
-
-
-    
-    
-    
 }
