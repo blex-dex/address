@@ -47,5 +47,7 @@
     "ReferralImpl": "0xd459d964c9316f028253Afc6DDCa05Bcf262c7f2",
     "Referral_block": 2624641,
     "AutoManager": "0x4764976BEd285004EFa6FF518f5D7a3eaB91Aac2",
-    "AutoManager_block": 2624657
+    "AutoManager_block": 2624657,
+    "AutoOrderV2": "0xBe2aBEef4FB7Dbc7FC9F1101E94c9C33922fc699",
+    "AutoOrderV2_block": 2630751
 }
