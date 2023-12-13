@@ -22,7 +22,5 @@
   "OrderStore3": "0xdCf904636D1c825EC6B6885FdEB50684722962Ae",
   "OrderStore3_block": 2706118,
   "orderBookLong": "0xf978cb15E80d9C36cBf65e84EA571f648CD9359B",
-  "orderBookLong_block": 2706118,
-  "orderBookShort": "0x433903Dfe0Eb83f3b4dEc4323fdD4E905D8ba9d9",
-  "orderBookShort_block": 2706118
+  "orderBookLong_block": 2706118
 }
