@@ -1,5 +1,5 @@
 {
-    "LINK": "0x326c977e6efc84e512bb9c30f76e30c160ed06fb",
+    "LINK": "0xb1d4538b4571d411f07960ef2838ce337fe1e80e",
     "ETH": "0x980b62da83eff3d4576c647993b0c1d7faf17c73",
     "BTC": "0x806d0637fbbfb4eb9efd5119b0895a5c7cbc66e7",
     "USDT": "0x3653ecbfb7EAF6612A6db76e95FB5d9E13bd9A00",
@@ -54,5 +54,7 @@
     "ReferralImpl": "0x79B5Fba3A5DfCd01468637BB4BA02519Dd91BBbE",
     "Referral_block": 2705075,
     "AutoOrderV2": "0x3ECD1eB4742823F4C9Ea35504994764305ca3247",
-    "AutoOrderV2_block": 2705263
+    "AutoOrderV2_block": 2705263,
+    "Registry": "0x8194399B3f11fcA2E8cCEfc4c9A658c61B8Bf412",
+    "Upkeep": "0x149A9170ee32c38b417bD1eA92e4726950B87108"
 }
