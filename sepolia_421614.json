@@ -59,5 +59,7 @@
   "Upkeep": "0x149A9170ee32c38b417bD1eA92e4726950B87108",
   "OrderStreamsUpkeep": "0x7615a0CAeDB1ED3937bdfAB092A3cCdFC815599C",
   "OrderStreamsUpkeepImpl": "0x5C3ef5A5E314891fAd9A77d6b40C53b86E7fd8B2",
-  "OrderStreamsUpkeep_block": 3375029
+  "OrderStreamsUpkeep_block": 3375029,
+  "ETHChainPriceFeed": "0xf3138B59cAcbA1a4d7d24fA7b184c20B3941433e",
+  "ETHChainPriceFeedProxy": "0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165"
 }
