@@ -58,12 +58,12 @@
   "Registry": "0x8194399B3f11fcA2E8cCEfc4c9A658c61B8Bf412",
   "Upkeep": "0x149A9170ee32c38b417bD1eA92e4726950B87108",
   "OrderStreamsUpkeep": "0x7615a0CAeDB1ED3937bdfAB092A3cCdFC815599C",
-  "OrderStreamsUpkeepImpl": "0x9D1670520c5F58b6C24aEd98253ab3b308c9767a",
+  "OrderStreamsUpkeepImpl": "0x4Ff0dEe4503e5d246884Bf49894cE553bf79B522",
   "OrderStreamsUpkeep_block": 3548683,
   "ETHChainPriceFeed": "0xf3138B59cAcbA1a4d7d24fA7b184c20B3941433e",
   "ETHChainPriceFeedProxy": "0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165",
   "LiqStreamsUpkeep": "0xcb86cB7F8A39422B5A5c42C21A3d45BEc78674e0",
   "LiqStreamsUpkeepImpl": "0x1aD76b3BEdfE58Aa12F081C772ab8aecBaA5d3F5",
   "LiqStreamsUpkeep_block": 3434804,
-  "OrderStreamsUpkeepImpl_block": 3727740
+  "OrderStreamsUpkeepImpl_block": 3551025
 }
