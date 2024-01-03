@@ -46,7 +46,7 @@
   "FeeRouter_block": 2704981,
   "ChainPriceFeed": "0x370ea99f4A27c8F34EB0A89C9BC1D7cC5b9aA059",
   "FastPriceFeed": "0x905BA6564Def7498555Fc347C591b70234548751",
-  "FastPriceFeedImpl": "0xB1e425af742cece53C16Fe0245bb9B394bC34E1f",
+  "FastPriceFeedImpl": "0xFdAA8653a5994ec2c3343B0b8215c0242235AC03",
   "FastPriceFeed_block": 2705002,
   "Price": "0xba32faF6d71B67115b5fE967A6F0fB17b2E26a40",
   "Price_block": 2705007,
@@ -58,16 +58,13 @@
   "Registry": "0x8194399B3f11fcA2E8cCEfc4c9A658c61B8Bf412",
   "Upkeep": "0x149A9170ee32c38b417bD1eA92e4726950B87108",
   "OrderStreamsUpkeep": "0x7615a0CAeDB1ED3937bdfAB092A3cCdFC815599C",
+  "OrderStreamsUpkeepImpl": "0xb5bc99b53fff636440EF035cd0adcB7AE8935E25",
   "OrderStreamsUpkeep_block": 3548683,
   "ETHChainPriceFeed": "0xf3138B59cAcbA1a4d7d24fA7b184c20B3941433e",
   "ETHChainPriceFeedProxy": "0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165",
   "LiqStreamsUpkeep": "0xcb86cB7F8A39422B5A5c42C21A3d45BEc78674e0",
   "LiqStreamsUpkeepImpl": "0xf76a4E2C744d5172781c1fAA7ce1DdcB4Fd577BA",
   "LiqStreamsUpkeep_block": 3434804,
-  "LiqStreamsUpkeepImpl_block": 4622226,
-  "OrderStreamsUpkeepImpl": "0x543C05391140B0923c32a3444cDB7E15cF202442",
-  "OrderStreamsUpkeepImpl_block": 4637606,
-  "FastPriceFeedImpl_block": 4665606,
-  "AutoLiq": "0x7ce298Ad682bE6B8E74C2d3154A0ecE3B2461a0B",
-  "AutoLiq_block": 4685332
+  "OrderStreamsUpkeepImpl_block": 4621967,
+  "LiqStreamsUpkeepImpl_block": 4622226
 }

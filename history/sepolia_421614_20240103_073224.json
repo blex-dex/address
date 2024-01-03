@@ -46,7 +46,7 @@
   "FeeRouter_block": 2704981,
   "ChainPriceFeed": "0x370ea99f4A27c8F34EB0A89C9BC1D7cC5b9aA059",
   "FastPriceFeed": "0x905BA6564Def7498555Fc347C591b70234548751",
-  "FastPriceFeedImpl": "0xB1e425af742cece53C16Fe0245bb9B394bC34E1f",
+  "FastPriceFeedImpl": "0xfbdc80d353f8e4f251c3358a4e58d48463a41edb",
   "FastPriceFeed_block": 2705002,
   "Price": "0xba32faF6d71B67115b5fE967A6F0fB17b2E26a40",
   "Price_block": 2705007,
@@ -66,8 +66,5 @@
   "LiqStreamsUpkeep_block": 3434804,
   "LiqStreamsUpkeepImpl_block": 4622226,
   "OrderStreamsUpkeepImpl": "0x543C05391140B0923c32a3444cDB7E15cF202442",
-  "OrderStreamsUpkeepImpl_block": 4637606,
-  "FastPriceFeedImpl_block": 4665606,
-  "AutoLiq": "0x7ce298Ad682bE6B8E74C2d3154A0ecE3B2461a0B",
-  "AutoLiq_block": 4685332
+  "OrderStreamsUpkeepImpl_block": 4637606
 }

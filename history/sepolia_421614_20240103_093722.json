@@ -67,7 +67,5 @@
   "LiqStreamsUpkeepImpl_block": 4622226,
   "OrderStreamsUpkeepImpl": "0x543C05391140B0923c32a3444cDB7E15cF202442",
   "OrderStreamsUpkeepImpl_block": 4637606,
-  "FastPriceFeedImpl_block": 4665606,
-  "AutoLiq": "0x7ce298Ad682bE6B8E74C2d3154A0ecE3B2461a0B",
-  "AutoLiq_block": 4685332
+  "FastPriceFeedImpl_block": 4665606
 }
