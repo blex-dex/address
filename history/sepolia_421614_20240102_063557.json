@@ -63,8 +63,7 @@
   "ETHChainPriceFeed": "0xf3138B59cAcbA1a4d7d24fA7b184c20B3941433e",
   "ETHChainPriceFeedProxy": "0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165",
   "LiqStreamsUpkeep": "0xcb86cB7F8A39422B5A5c42C21A3d45BEc78674e0",
-  "LiqStreamsUpkeepImpl": "0xA2317dC2e4010f90020F0A5a9Bd75423F3Af8061",
+  "LiqStreamsUpkeepImpl": "0x1aD76b3BEdfE58Aa12F081C772ab8aecBaA5d3F5",
   "LiqStreamsUpkeep_block": 3434804,
-  "OrderStreamsUpkeepImpl_block": 3727740,
-  "LiqStreamsUpkeepImpl_block": 4616166
+  "OrderStreamsUpkeepImpl_block": 3727740
 }
