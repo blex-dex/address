@@ -67,8 +67,7 @@
   "FastPriceFeedImpl_block": 4665606,
   "AutoLiq": "0x7ce298Ad682bE6B8E74C2d3154A0ecE3B2461a0B",
   "AutoLiq_block": 4685332,
-  "OrderLiqStreamsUpkeepImpl": "0x0FBef10A115825d34f1f3368783366b3A51C0D93",
+  "OrderLiqStreamsUpkeepImpl": "0x577d9D4c6760b8B7619c99d81fabC093830eC3eB",
   "OrderLiqStreamsUpkeep_block": 5361878,
-  "OrderLiqStreamsUpkeep": "0xf058f7C6c4B1e3c18a613c12D8D26694314EaD22",
-  "OrderLiqStreamsUpkeepImpl_block": 5367312
+  "OrderLiqStreamsUpkeep": "0xf058f7C6c4B1e3c18a613c12D8D26694314EaD22"
 }
