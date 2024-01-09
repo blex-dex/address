@@ -69,6 +69,6 @@
   "AutoLiq_block": 4685332,
   "OrderLiqStreamsUpkeep_block": 5361878,
   "OrderLiqStreamsUpkeep": "0xf058f7C6c4B1e3c18a613c12D8D26694314EaD22",
-  "OrderLiqStreamsUpkeepImpl": "0x8a2a533c009C96A914370f0359e1062c46B943e3",
-  "OrderLiqStreamsUpkeepImpl_block": 5877902
+  "OrderLiqStreamsUpkeepImpl": "0xD8624380D2Eeb0AD4Af9E3a9C09b7D3525d080fc",
+  "OrderLiqStreamsUpkeepImpl_block": 5769209
 }
