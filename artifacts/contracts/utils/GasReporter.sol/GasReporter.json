@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GasReporter",
+  "sourceName": "contracts/utils/GasReporter.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d9ca97c64f66b1cc8a37d8bc0531bf466d6b19f19c002206d40e967e45daae6b64736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d9ca97c64f66b1cc8a37d8bc0531bf466d6b19f19c002206d40e967e45daae6b64736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

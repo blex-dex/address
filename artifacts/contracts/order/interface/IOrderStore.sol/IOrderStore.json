@@ -1,0 +1,667 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IOrderStore",
+  "sourceName": "contracts/order/interface/IOrderStore.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "updatedAtBlock",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "triggerAbove",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint48",
+              "name": "extra3",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint128",
+              "name": "collateral",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "size",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "price",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra1",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "extra2",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "refCode",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Order.Props",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "containsKey",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "delByAccount",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "updatedAtBlock",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "triggerAbove",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint48",
+              "name": "extra3",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint128",
+              "name": "collateral",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "size",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "price",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra1",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "extra2",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "refCode",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Order.Props[]",
+          "name": "_orders",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_acc",
+          "type": "address"
+        }
+      ],
+      "name": "generateID",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getKey",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "start",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "end",
+          "type": "uint256"
+        }
+      ],
+      "name": "getKeys",
+      "outputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "",
+          "type": "bytes32[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getOrderByAccount",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "updatedAtBlock",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "triggerAbove",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint48",
+              "name": "extra3",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint128",
+              "name": "collateral",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "size",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "price",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra1",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "extra2",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "refCode",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Order.Props[]",
+          "name": "_orders",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_isLong",
+          "type": "bool"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isLong",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_a",
+          "type": "address"
+        }
+      ],
+      "name": "orderNum",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "orders",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "updatedAtBlock",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "triggerAbove",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint48",
+              "name": "extra3",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint128",
+              "name": "collateral",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "size",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "price",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra1",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "extra2",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "refCode",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Order.Props",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "key",
+          "type": "bytes32"
+        }
+      ],
+      "name": "remove",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "updatedAtBlock",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "triggerAbove",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint48",
+              "name": "extra3",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint128",
+              "name": "collateral",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "size",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "price",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra1",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "extra2",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "refCode",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Order.Props",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint32",
+              "name": "updatedAtBlock",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint8",
+              "name": "triggerAbove",
+              "type": "uint8"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint48",
+              "name": "extra3",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint128",
+              "name": "collateral",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "size",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "price",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra1",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "extra2",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "extra0",
+              "type": "uint128"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "refCode",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Order.Props",
+          "name": "order",
+          "type": "tuple"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_ob",
+          "type": "address"
+        }
+      ],
+      "name": "setOrderBook",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

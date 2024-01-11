@@ -1,0 +1,108 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFastPriceFeed",
+  "sourceName": "contracts/interfaces/oracle/IFastPriceFeed.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "name",
+          "type": "address"
+        }
+      ],
+      "name": "lastUpdatedAtBlock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "_tokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_prices",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "setPrices",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint64",
+              "name": "orderID",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bool",
+              "name": "isIncrease",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct IMarket.OrderExec[]",
+          "name": "orders",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "setPricesAndExecute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

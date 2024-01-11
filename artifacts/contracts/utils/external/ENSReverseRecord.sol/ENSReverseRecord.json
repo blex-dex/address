@@ -1,0 +1,24 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ENSReverseRecord",
+  "sourceName": "contracts/utils/external/ENSReverseRecord.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "REVERSE_REGISTRAR",
+      "outputs": [
+        {
+          "internalType": "contract IReverseRegistrar",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

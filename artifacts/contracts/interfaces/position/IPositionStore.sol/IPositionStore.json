@@ -1,0 +1,603 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IPositionStore",
+  "sourceName": "contracts/interfaces/position/IPositionStore.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "account",
+          "type": "address[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint128",
+              "name": "liqPrice",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint8",
+              "name": "state",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint120",
+              "name": "extra",
+              "type": "uint120"
+            }
+          ],
+          "internalType": "struct Position.Liquidate[]",
+          "name": "liqs",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "addLiq",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "wasAdded",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "contains",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "containsLiq",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTime",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint216",
+              "name": "extra3",
+              "type": "uint216"
+            },
+            {
+              "internalType": "uint256",
+              "name": "size",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averagePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "entryFundingRate",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "realisedPnl",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra2",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Position.Props",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getGlobalPosition",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTime",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint216",
+              "name": "extra3",
+              "type": "uint216"
+            },
+            {
+              "internalType": "uint256",
+              "name": "size",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averagePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "entryFundingRate",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "realisedPnl",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra2",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Position.Props",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getLiq",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint128",
+              "name": "liqPrice",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint8",
+              "name": "state",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint120",
+              "name": "extra",
+              "type": "uint120"
+            }
+          ],
+          "internalType": "struct Position.Liquidate",
+          "name": "",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bool",
+          "name": "has",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPositionCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "start",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "end",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPositionKeys",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "globalSize",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isLong",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "positionBook",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTime",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint216",
+              "name": "extra3",
+              "type": "uint216"
+            },
+            {
+              "internalType": "uint256",
+              "name": "size",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averagePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "entryFundingRate",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "realisedPnl",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra2",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Position.Props",
+          "name": "globalPosition",
+          "type": "tuple"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTime",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint216",
+              "name": "extra3",
+              "type": "uint216"
+            },
+            {
+              "internalType": "uint256",
+              "name": "size",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averagePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "entryFundingRate",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "realisedPnl",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra2",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Position.Props",
+          "name": "position",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTime",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint216",
+              "name": "extra3",
+              "type": "uint216"
+            },
+            {
+              "internalType": "uint256",
+              "name": "size",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averagePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "entryFundingRate",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "realisedPnl",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra2",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Position.Props",
+          "name": "globalPosition",
+          "type": "tuple"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "positionBook",
+          "type": "address"
+        }
+      ],
+      "name": "setPositionBook",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

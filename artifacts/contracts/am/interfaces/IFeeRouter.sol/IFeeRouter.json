@@ -1,0 +1,266 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFeeRouter",
+  "sourceName": "contracts/am/interfaces/IFeeRouter.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "FEE_RATE_PRECISION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8[]",
+          "name": "types",
+          "type": "uint8[]"
+        },
+        {
+          "internalType": "int256[]",
+          "name": "fees",
+          "type": "int256[]"
+        }
+      ],
+      "name": "collectFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isLong",
+          "type": "bool"
+        }
+      ],
+      "name": "cumulativeFundingRates",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "kind",
+          "type": "uint8"
+        }
+      ],
+      "name": "feeAndRates",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeVault",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "fundFee",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        }
+      ],
+      "name": "getExecFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "longSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "shortSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isLong",
+          "type": "bool"
+        }
+      ],
+      "name": "getFundingRate",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "vault",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "fundingFee",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8[]",
+          "name": "kinds",
+          "type": "uint8[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "rates",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "setFeeAndRates",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "longSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "shortSize",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateCumulativeFundingRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

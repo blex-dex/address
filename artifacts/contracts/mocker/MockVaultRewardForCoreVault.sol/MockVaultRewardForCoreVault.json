@@ -1,0 +1,209 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockVaultRewardForCoreVault",
+  "sourceName": "contracts/mocker/MockVaultRewardForCoreVault.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Harvest",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "supply",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "cumulativeRewardPerToken",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogUpdatePool",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "currentRewards",
+          "type": "uint256"
+        }
+      ],
+      "name": "RewardUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "PRECISION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "apr",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "averageStakedAmounts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "claimableReward",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "cumulativeRewardPerToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "distributor",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "lpEarnedRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "previousCumulatedRewardPerToken",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        }
+      ],
+      "name": "updateRewardsByAccount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061023c806100206000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c8063aaf5eb6811610066578063aaf5eb6814610109578063ae8bcdf81461011d578063bfe109281461013d578063e950342514610168578063f5fc50761461018857600080fd5b80631ee2b0b21461009857806344a08411146100ad57806357ded9c9146100e0578063a3180217146100e9575b600080fd5b6100ab6100a63660046101d6565b610191565b005b6100cd6100bb3660046101d6565b60036020526000908152604090205481565b6040519081526020015b60405180910390f35b6100cd60025481565b6100cd6100f73660046101d6565b60066020526000908152604090205481565b6100cd6c0c9f2c9cd04674edea4000000081565b6100cd61012b3660046101d6565b60046020526000908152604090205481565b600154610150906001600160a01b031681565b6040516001600160a01b0390911681526020016100d7565b6100cd6101763660046101d6565b60056020526000908152604090205481565b6100cd60005481565b604080516001600160a01b0383168152600060208201527f401ccfec4c6c7ac3f3b71182750d0f8d73c0d29cc476732b0b21ab0d359da47f910160405180910390a150565b6000602082840312156101e857600080fd5b81356001600160a01b03811681146101ff57600080fd5b939250505056fea26469706673582212208a8d60accd0f7821b7155b0cab521944ba77ec7f7062c415d92a570502e2d5e264736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c8063aaf5eb6811610066578063aaf5eb6814610109578063ae8bcdf81461011d578063bfe109281461013d578063e950342514610168578063f5fc50761461018857600080fd5b80631ee2b0b21461009857806344a08411146100ad57806357ded9c9146100e0578063a3180217146100e9575b600080fd5b6100ab6100a63660046101d6565b610191565b005b6100cd6100bb3660046101d6565b60036020526000908152604090205481565b6040519081526020015b60405180910390f35b6100cd60025481565b6100cd6100f73660046101d6565b60066020526000908152604090205481565b6100cd6c0c9f2c9cd04674edea4000000081565b6100cd61012b3660046101d6565b60046020526000908152604090205481565b600154610150906001600160a01b031681565b6040516001600160a01b0390911681526020016100d7565b6100cd6101763660046101d6565b60056020526000908152604090205481565b6100cd60005481565b604080516001600160a01b0383168152600060208201527f401ccfec4c6c7ac3f3b71182750d0f8d73c0d29cc476732b0b21ab0d359da47f910160405180910390a150565b6000602082840312156101e857600080fd5b81356001600160a01b03811681146101ff57600080fd5b939250505056fea26469706673582212208a8d60accd0f7821b7155b0cab521944ba77ec7f7062c415d92a570502e2d5e264736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

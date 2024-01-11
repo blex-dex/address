@@ -1,0 +1,570 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFeeRouter",
+  "sourceName": "contracts/interfaces/fee/IFeeRouter.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "FEE_RATE_PRECISION",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "int256[]",
+          "name": "fees",
+          "type": "int256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fundfeeLoss",
+          "type": "uint256"
+        }
+      ],
+      "name": "collectFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "int256[]",
+          "name": "originFees",
+          "type": "int256[]"
+        }
+      ],
+      "name": "collectFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isLong",
+          "type": "bool"
+        }
+      ],
+      "name": "cumulativeFundingRates",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "kind",
+          "type": "uint8"
+        }
+      ],
+      "name": "feeAndRates",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeVault",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "fundFee",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        }
+      ],
+      "name": "getExecFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "_market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "_isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_oraclePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isOpen",
+              "type": "bool"
+            },
+            {
+              "internalType": "address",
+              "name": "_account",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_sizeDelta",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_slippage",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "_isExec",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint8",
+              "name": "liqState",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint64",
+              "name": "_fromOrder",
+              "type": "uint64"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "_refCode",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateralDelta",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "execNum",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "inputs",
+              "type": "uint256[]"
+            }
+          ],
+          "internalType": "struct MarketDataTypes.UpdatePositionInputs",
+          "name": "params",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint32",
+              "name": "lastTime",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint216",
+              "name": "extra3",
+              "type": "uint216"
+            },
+            {
+              "internalType": "uint256",
+              "name": "size",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "collateral",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averagePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "int256",
+              "name": "entryFundingRate",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "realisedPnl",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "extra2",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Position.Props",
+          "name": "position",
+          "type": "tuple"
+        }
+      ],
+      "name": "getFees",
+      "outputs": [
+        {
+          "internalType": "int256[]",
+          "name": "",
+          "type": "int256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "isLong",
+          "type": "bool"
+        }
+      ],
+      "name": "getFundingRate",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "_market",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "_isLong",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_oraclePrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isOpen",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isCreate",
+              "type": "bool"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint8",
+                  "name": "version",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "updatedAtBlock",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "uint8",
+                  "name": "triggerAbove",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "address",
+                  "name": "account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint48",
+                  "name": "extra3",
+                  "type": "uint48"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "collateral",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "size",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "price",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "extra1",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "orderID",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "extra2",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint128",
+                  "name": "extra0",
+                  "type": "uint128"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "refCode",
+                  "type": "bytes32"
+                }
+              ],
+              "internalType": "struct Order.Props",
+              "name": "_order",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "inputs",
+              "type": "uint256[]"
+            }
+          ],
+          "internalType": "struct MarketDataTypes.UpdateOrderInputs",
+          "name": "params",
+          "type": "tuple"
+        }
+      ],
+      "name": "getOrderFees",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "fees",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "int256[]",
+          "name": "fees",
+          "type": "int256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "feesTotal",
+          "type": "uint256"
+        }
+      ],
+      "name": "payoutFees",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "rates",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "setFeeAndRates",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "market",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "longSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "shortSize",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateCumulativeFundingRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

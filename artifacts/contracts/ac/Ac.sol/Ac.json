@@ -1,0 +1,160 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Ac",
+  "sourceName": "contracts/ac/Ac.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_f",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "version",
+          "type": "uint8"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_ADMIN_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "_transferOwnership",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        }
+      ],
+      "name": "grantControllerRoleByMarketManager",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "grantRole",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "hasRole",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "revokeRole",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "transferAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161026038038061026083398101604081905261002f91610056565b6100428161004860201b6101241760201c565b50610086565b426001556100533381565b50565b60006020828403121561006857600080fd5b81516001600160a01b038116811461007f57600080fd5b9392505050565b6101cb806100956000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063a217fddf1161005b578063a217fddf146100f2578063d29d44ee14610108578063d547741f1461008d578063f2fde38b1461010857600080fd5b80632f2ff15d1461008d57806375829def146100a15780637fe4a698146100b457806391d14854146100c7575b600080fd5b61009f61009b366004610147565b5050565b005b61009f6100af366004610173565b610119565b61009f6100c2366004610173565b610116565b6100dd6100d5366004610147565b600192915050565b60405190151581526020015b60405180910390f35b6100fa600081565b6040519081526020016100e9565b61009f610116366004610173565b50565b600061009b60003382565b4260015550565b80356001600160a01b038116811461014257600080fd5b919050565b6000806040838503121561015a57600080fd5b8235915061016a6020840161012b565b90509250929050565b60006020828403121561018557600080fd5b61018e8261012b565b939250505056fea264697066735822122072231ff5ff8062e59b5162ffe499be349cd1ce757609d20131ba49fa53c3ee6d64736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063a217fddf1161005b578063a217fddf146100f2578063d29d44ee14610108578063d547741f1461008d578063f2fde38b1461010857600080fd5b80632f2ff15d1461008d57806375829def146100a15780637fe4a698146100b457806391d14854146100c7575b600080fd5b61009f61009b366004610147565b5050565b005b61009f6100af366004610173565b610119565b61009f6100c2366004610173565b610116565b6100dd6100d5366004610147565b600192915050565b60405190151581526020015b60405180910390f35b6100fa600081565b6040519081526020016100e9565b61009f610116366004610173565b50565b600061009b60003382565b4260015550565b80356001600160a01b038116811461014257600080fd5b919050565b6000806040838503121561015a57600080fd5b8235915061016a6020840161012b565b90509250929050565b60006020828403121561018557600080fd5b61018e8261012b565b939250505056fea264697066735822122072231ff5ff8062e59b5162ffe499be349cd1ce757609d20131ba49fa53c3ee6d64736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
