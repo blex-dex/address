@@ -56,7 +56,7 @@
   "AutoManager_block": 19248376,
   "BatchTransfer": "0x94D95A4f82C889203Cb45E12278c2cdbb9962124",
   "BatchTransfer_block": 19248440,
-  "FastPriceFeedImpl": "0x3FAF0413253EA502FDd06d5d121216937a5C7D06",
+  "FastPriceFeedImpl": "0x7Ed3E59d5f768559A94930d73Db912b2149b59A7",
   "AutoOrderV2": "0x31bcc88Bb38c9455c0dbC01d6685f555520a1AD8",
   "AutoOrderV2_block": 21591157,
   "FeeRouterImpl": "0xb41eCDcAba0b48A7787451a18d20d9a82101cF0F",
@@ -65,6 +65,5 @@
   "OrderLiqStreamsUpkeepImpl": "0xD6b345DCA02b717751cbC0aE844DA9298F2eb10b",
   "OrderLiqStreamsUpkeep_block": 23705306,
   "AccessManager": "0xac52e3966f457613288fBaaD4C450Db5fA7E8803",
-  "OrderLiqStreamsUpkeepImpl_block": 23705822,
-  "FastPriceFeedImpl_block": 23723099
+  "OrderLiqStreamsUpkeepImpl_block": 23705822
 }
