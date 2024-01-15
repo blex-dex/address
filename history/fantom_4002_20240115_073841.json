@@ -62,9 +62,9 @@
   "FeeRouterImpl": "0xb41eCDcAba0b48A7787451a18d20d9a82101cF0F",
   "FundFeeImpl": "0xEEC0D2cd8a54c22b77f1011685E4666b94fA2bcD",
   "OrderLiqStreamsUpkeep": "0x8EF4d401F8439d1c5da9De5a11034B2280Aa44F6",
-  "OrderLiqStreamsUpkeepImpl": "0xDc165CB98a5780d113675AE90D06780a23751A39",
+  "OrderLiqStreamsUpkeepImpl": "0xD6b345DCA02b717751cbC0aE844DA9298F2eb10b",
   "OrderLiqStreamsUpkeep_block": 23705306,
   "AccessManager": "0xac52e3966f457613288fBaaD4C450Db5fA7E8803",
-  "OrderLiqStreamsUpkeepImpl_block": 23769852,
+  "OrderLiqStreamsUpkeepImpl_block": 23705822,
   "FastPriceFeedImpl_block": 23766858
 }
