@@ -6,10 +6,7 @@
   "MarketValid": "0x4851d8d588Ebc473125bC7EFF1d905C3baB60868",
   "MarketValidImpl": "0x6a949921e78Dfb2b57f118E922c0aabea6377836",
   "MarketValid_block": 23830109,
-  "PositionStoreV2": "0xcf9C2F6B38Ba36038de7DC3F74eE7898fffd7e1a",
-  "PositionStoreV2Impl": "0x7817159e0Eba1B184402f62A9A393991f3399821",
-  "PositionStoreV2_block": 23833497,
-  "PositionBookV2": "0x75EfeED0b79fF6d41aF7e11d5a5bb3C593318bf5",
-  "PositionBookV2Impl": "0x7b13Bb4FE405aE2473b72D182BCA0566cC8d1985",
-  "PositionBookV2_block": 23833506
+  "PositionStoreV2": "0x10Af95743436E90142A932EC438c613B76278851",
+  "PositionStoreV2Impl": "0x11F72baB237bae30a800121936491e5297043765",
+  "PositionStoreV2_block": 23833493
 }

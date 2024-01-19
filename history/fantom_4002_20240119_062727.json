@@ -67,7 +67,5 @@
   "OrderLiqStreamsUpkeep_block": 23705306,
   "AccessManager": "0xac52e3966f457613288fBaaD4C450Db5fA7E8803",
   "OrderLiqStreamsUpkeepImpl_block": 23769852,
-  "FastPriceFeedImpl_block": 23766858,
-  "FundFeeTestImpl": "0x5B662428Da85D38eF6b670a9938792E960FD0489",
-  "FundFeeTestImpl_block": 23832022
+  "FastPriceFeedImpl_block": 23766858
 }

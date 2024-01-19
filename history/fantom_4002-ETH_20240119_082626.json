@@ -8,8 +8,5 @@
   "MarketValid_block": 23830113,
   "PositionStoreV2": "0x51A33a1253b3027480E727e97EF0659999a06EEf",
   "PositionStoreV2Impl": "0xafDa5048A28bd0285095fc8dfD0c178f066972E6",
-  "PositionStoreV2_block": 23833518,
-  "PositionBookV2": "0x81D91E4B14D2dF49575f361A4836D7c7A7243082",
-  "PositionBookV2Impl": "0xe4F7DFCEFc9af2b22f5c8F941B83377cE0eA0130",
-  "PositionBookV2_block": 23833523
+  "PositionStoreV2_block": 23833518
 }
