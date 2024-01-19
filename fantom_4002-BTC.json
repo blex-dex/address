@@ -1,6 +1,9 @@
 {
-    "MarketID": 447183118476614,
-    "AutoLiquidateLong": "0x332d80dbd2e283B6CF23ad0EF8e8952Dee8CD752",
-    "AutoLiquidateShort": "0x282dAc3C0EA5465644b9DEA122fd32D4fB73b65A",
-    "market": "0xa1a71d83f4d5b1867D091a17bec00557c160ea96"
+  "MarketID": 447183118476614,
+  "AutoLiquidateLong": "0x332d80dbd2e283B6CF23ad0EF8e8952Dee8CD752",
+  "AutoLiquidateShort": "0x282dAc3C0EA5465644b9DEA122fd32D4fB73b65A",
+  "market": "0xa1a71d83f4d5b1867D091a17bec00557c160ea96",
+  "MarketValid": "0x4851d8d588Ebc473125bC7EFF1d905C3baB60868",
+  "MarketValidImpl": "0x6a949921e78Dfb2b57f118E922c0aabea6377836",
+  "MarketValid_block": 23830109
 }
