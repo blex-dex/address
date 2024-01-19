@@ -9,7 +9,7 @@
   "PositionStoreV2": "0x47Fb5844edA46b2d8DF94647d5579934eE604ECe",
   "PositionStoreV2Impl": "0x7EbF5b7491EF7c34737c6e0a8FbBEACAB6eca195",
   "PositionStoreV2_block": 23836313,
-  "PositionBookV2": "0x321AE3bd202Ad5249E9596FE925529005a0c2EBa",
-  "PositionBookV2Impl": "0x25685F835ded436B23EE8091e0d27FD5a90Eec3E",
-  "PositionBookV2_block": 23836315
+  "PositionBookV2": "0xcEd804EB743d8EDe443b87d9e2A168307B6116fd",
+  "PositionBookV2Impl": "0xDE532Fda3AAE15d4eFd90917078F921aA24814e3",
+  "PositionBookV2_block": 23835068
 }
