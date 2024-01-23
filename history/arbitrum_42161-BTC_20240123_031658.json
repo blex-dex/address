@@ -1,0 +1,17 @@
+{
+    "orderBookLong": "0x212FdCCd26a29a2bD19bA09B6edeC78C67DA9992",
+    "orderBookLong_block": 146279735,
+    "orderBookShort": "0x502aCFC5684c5a4486F374c3696d3DaCce35d5C0",
+    "Market": "0x7B173a3A8d562B7Fb99743a3707deF1236935ac5",
+    "PositionBook": "0xF7C55D14F4961EA84Be582a8DbCD9186eCE6Bb91",
+    "orderBookShort_block": 146279799,
+    "PositionStoreV2Long": "0xa02970C3a7fcd628842ed36D797363B47b7373ba",
+    "PositionStoreV2LongImpl": "0x68cA3A6e46A69De4Bd948c48f7D61BB6Ec4E67cA",
+    "PositionStoreV2Long_block": 156974466,
+    "PositionStoreV2Short": "0x67e5058142d202f880e79497bE2e5FE9058E66f6",
+    "PositionStoreV2ShortImpl": "0x10c28c922DD96B00bd0c04Aa865E506EC4E8e9fc",
+    "PositionStoreV2Short_block": 156974519,
+    "PositionBookV2": "0x79C4F37D121A98866F070eed5e29f081A3E25A4D",
+    "PositionBookV2Impl": "0x6B5dad637Fb6eC414188a4f27268007526470006",
+    "PositionBookV2_block": 156974574
+}
