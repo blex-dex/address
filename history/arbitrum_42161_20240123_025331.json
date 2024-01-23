@@ -59,7 +59,7 @@
   "FeeRouterImpl": "0x46E01Db554eE3c4b54AC023237F2FC69E77B2cA0",
   "AutoLiq": "0x3e2bef2d52faad70589b4ecd0c1b3e240096c191",
   "OrderLiqStreamsUpkeep": "0x74ea4a1CA2d6162cadb5E4cc01D0C6F6c0e2DfE4",
-  "OrderLiqStreamsUpkeepImpl": "0xe34231e9339e80A775C1f77cB806A5a56e4c1A98",
+  "OrderLiqStreamsUpkeepImpl": "0x98FC3c111B09fa74293aC45F8e1111BA280235b8",
   "OrderLiqStreamsUpkeep_block": 171413101,
-  "OrderLiqStreamsUpkeepImpl_block": 173216996
+  "OrderLiqStreamsUpkeepImpl_block": 171590760
 }
