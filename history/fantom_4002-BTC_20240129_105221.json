@@ -12,10 +12,7 @@
   "PositionBookV2": "0xc0B8Fc181C87bF88C95C43402aefc742A1E62687",
   "PositionBookV2Impl": "0xE822828E3ADAe70926e58EBC3465E0b5b3676abC",
   "PositionBookV2_block": 23836292,
-  "OrderBookLong": "0xe2840270dB55FD9f9B1BcfF979cBf2B453F9Fb4f",
-  "OrderBookLongImpl": "0xB379Ef33DCD0D45fF48189642CcefcCe7c658Bf2",
-  "OrderBookLong_block": 23991401,
-  "OrderBookShort": "0xf1b90fb986b0851770de1899ab4ca9Fc5478b610",
-  "OrderBookShortImpl": "0x1F3fc5d740E71f813412b8a8dF8636afEcd47a12",
-  "OrderBookShort_block": 23991408
+  "OrderBookLong": "0xd5aC8791DdE07630262Ca9b5407E4DCA6489B93C",
+  "OrderBookLongImpl": "0xd91973cC9bbD2C9362a2143aA246821b97971029",
+  "OrderBookLong_block": 23991388
 }

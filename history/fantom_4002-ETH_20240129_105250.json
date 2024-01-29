@@ -11,11 +11,5 @@
   "PositionStoreV2_block": 23836313,
   "PositionBookV2": "0x321AE3bd202Ad5249E9596FE925529005a0c2EBa",
   "PositionBookV2Impl": "0x25685F835ded436B23EE8091e0d27FD5a90Eec3E",
-  "PositionBookV2_block": 23836315,
-  "OrderBookLong": "0xDB113E809c8Ea712Dab0B5b669e16F53b8646a48",
-  "OrderBookLongImpl": "0xD4Db6CbD6ec0c872210E45400c9A481aDA073Df5",
-  "OrderBookLong_block": 23991411,
-  "OrderBookShort": "0xd83ca41A95F0e2f038F380c9A90d39CCb21bA582",
-  "OrderBookShortImpl": "0xcA557868b76df91c513784a915576bDf9969725E",
-  "OrderBookShort_block": 23991414
+  "PositionBookV2_block": 23836315
 }
