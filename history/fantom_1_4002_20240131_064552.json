@@ -1,0 +1,10 @@
+{
+  "FeeVault": "0x6a215fd4aBE5357E20207AEF41C4DB13e26B43E6",
+  "FeeVault_block": 24020345,
+  "FundFee": "0x68feff5F5645e411360DdE0351B34Aa448bD4d9D",
+  "FundFeeImpl": "0x4daDA7aE45B2689fB2a3E8758571458300B7A321",
+  "FundFee_block": 24020346,
+  "FeeRouter": "0xd7CdEc04fCFa33557549A18DB8Aa86fdCe616A57",
+  "FeeRouterImpl": "0x8C4Ae18db88f43d3c5a53624217463c05db4045C",
+  "FeeRouter_block": 24020348
+}

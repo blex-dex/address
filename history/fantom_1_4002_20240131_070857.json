@@ -1,0 +1,14 @@
+{
+  "FeeVault": "0xF04Fa509FEed29aD5B810eD548Dc41f89f7524cD",
+  "FeeVault_block": 24020387,
+  "FundFeeTest": "0xF8aD6Bce41f423f1EF9B541911Fd0535a3BEEDd8",
+  "FundFeeTestImpl": "0xA13CbB46aAbeC6371EF6520a94d1537af415aE58",
+  "FundFeeTest_block": 24020388,
+  "FeeRouter": "0xD7eE16f7dc61c2cE7d816b8eF306A6871d41B876",
+  "FeeRouterImpl": "0xB15CaA74403eAC74c68D48f3E816d54B42dFF5e3",
+  "FeeRouter_block": 24020390,
+  "GlobalValid": "0x864fA4fEd40220d020c4C808E003E9Ef4d7916e2",
+  "GlobalValid_block": 24020392,
+  "MarketFactory": "0x90A64bc742a032Ced044A0254B1CC23D6C01E56C",
+  "MarketFactory_block": 24020393
+}
